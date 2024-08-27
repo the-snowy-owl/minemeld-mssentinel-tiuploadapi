@@ -129,9 +129,9 @@ class Output(ActorBaseFT):
             LOG.info('{} - target_product set'.format(self.name))
 
         workspace_id = sconfig.get('workspace_id', None)
-        if target_product is not None:
+        if workspace_id is not None:
             self.workspace_id = workspace_id
-            LOG.info('{} -workspace_id set'.format(self.name))
+            LOG.info('{} - workspace_id set'.format(self.name))
 
     def connect(self, inputs, output):
         output = False
