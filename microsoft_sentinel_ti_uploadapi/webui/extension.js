@@ -418,7 +418,7 @@ angular.module('microsoftTIUWebui', [])
             tabs: [{
                 icon: 'fa fa-circle-o',
                 tooltip: 'INFO',
-                state: 'nodedetail.msftSTIUoutputinfo',
+                state: 'nodedetail.msftstiuoutputinfo',
                 active: false
             },
             {
