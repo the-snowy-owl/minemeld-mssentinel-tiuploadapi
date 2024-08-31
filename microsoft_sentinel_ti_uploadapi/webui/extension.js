@@ -189,7 +189,7 @@ function MSFTSTIUSideConfigController($scope, MinemeldConfigService, MineMeldRun
    vm.setWorkspaceID = function() {
         var mi = $modal.open({
             templateUrl: '/extensions/webui/microsoftTIUWebui/stiu.output.wid.modal.html',
-            controller: ['$modalInstance', MSFTSTIUClientIDController],
+            controller: ['$modalInstance', MSFTSTIUWorkspaceIDController],
             controllerAs: 'vm',
             bindToController: true,
             backdrop: 'static',
