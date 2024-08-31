@@ -186,7 +186,7 @@ class Output(ActorBaseFT):
         LOG.debug('{} - _push_indicators message is: {}'.format(self.name, message))
 
         result = requests.post(
-            ENDPOINT_URL1 + workspace_id + ENDPOINT_URL2,
+            ENDPOINT_URL1 + self.workspace_id + ENDPOINT_URL2,
             headers={
                 'Content-Type': 'application/json',
                 'Authorization': 'Bearer {}'.format(token),
